@@ -1,4 +1,6 @@
-﻿void FillArray(int[] collection)
+﻿// Ищем позицию четверки - на 51 строке написано int pos = IndexOf(array, 4);
+// если числа которое ищем нет в массиве - выводится -1
+void FillArray(int[] collection)
 {
     int length = collection.Length;
     int index = 0;
@@ -41,7 +43,8 @@ int IndexOf(int[] collection, int find)
 int[] array = new int[10];
 
 FillArray(array);
-array[4] = 4;
+// принудительно добавляем четверки для теста, break - обрубает дальше поиск после нахождения первого искомого числа.
+array[8] = 4;
 array[6] = 4;
 PrintArray(array);
 Console.WriteLine();
